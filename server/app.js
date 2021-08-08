@@ -3,6 +3,7 @@ const cors = require('cors');
 const { customAlphabet } = require('nanoid');
 const nanoid = customAlphabet('1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM', 10);
 const MasterMindNum = require('./mastermind');
+const createHttpError = require('http-errors');
 
 const app = express();
 app.use(cors());
