@@ -1,4 +1,4 @@
-const host = 'http://localhost:8080';
+const host = 'https://mastermind-ades.herokuapp.com/';
 
 window.addEventListener('DOMContentLoaded', function () {
     document.getElementById('start-game').addEventListener('click', function () {

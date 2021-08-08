@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
+    "publish": "gh-pages -d ../frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +17,8 @@
     "nanoid": "^3.1.23",
     "pg": "^8.7.1",
     "pool": "^0.4.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
