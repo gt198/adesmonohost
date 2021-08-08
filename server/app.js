@@ -24,6 +24,7 @@ app.get('/guess', function (req, res, next) {
     return res.send({
         "guess": guess
     })
+    .catch(next);
 });
 
 
