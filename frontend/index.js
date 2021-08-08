@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function () {
         .then(function (json) {
             window.alert('Mastermind game ' + json.gameId + ' has started');
             localStorage["sessionId"] = json.gameId;
-            //window.location.href = "./game.html"
+            window.location.href = "./game.html"
         })
     })
 
