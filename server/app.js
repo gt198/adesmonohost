@@ -8,6 +8,12 @@ const createHttpError = require('http-errors');
 const app = express();
 app.use(cors());
 
+app.get('/', function (req, res, next) {
+    return res.json({
+        Hello: "The game isn't here, go to  instead",
+    });
+});
+
 app.post('/', function (req, res, next) {
     const gameId = nanoid();
     setTimeout(function () {
