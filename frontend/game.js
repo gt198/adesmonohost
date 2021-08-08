@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('check-guess').addEventListener('click', function () {
         var guess = document.getElementById('guess-number').innerHTML;
-        if (isNaN(guess)) {
+        if (isNaN(guess) || guess == '') {
             window.alert('Invalid Guess. Please enter a number');
             return;
         }

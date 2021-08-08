@@ -9,10 +9,9 @@ window.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(function (json) {
-            window.alert('Mastermind game ' + json.game_Id + ' has started');
-            localStorage["sessionId"] = json.game_Id;
-            console.log(localStorage["sessionId"]);
-            window.location.href = "./game.html"
+            window.alert('Mastermind game ' + json.gameId + ' has started');
+            localStorage["sessionId"] = json.gameId;
+            //window.location.href = "./game.html"
         })
     })
 

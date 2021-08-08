@@ -8,6 +8,8 @@ const createHttpError = require('http-errors');
 const app = express();
 app.use(cors());
 
+sessions = {};
+
 app.get('/', function (req, res, next) {
     return res.json({
         Hello: "The game isn't here, go to https://gt198.github.io/adesmonohost/ instead",
@@ -15,14 +17,14 @@ app.get('/', function (req, res, next) {
 });
 
 app.post('/', function (req, res, next) {
-    const gameId = nanoid();
-    setTimeout(function () {
-        return MasterMindNum.create(gameId)
-        .then(function () {
-            return res.sendStatus(200);
-        })
-        .catch(next);
-    }, 500);
+    const sessionId = nanoid();
+    const masterMindNumber = 
+    sessions[sessionId] = 1;
+    console.log(sessionId);
+    return res.send({
+        "gameId": sessionId,
+        "MastermindNumber": MasterMindNum.create(MastermindNumber)
+    })
 });
 
 app.get('/guess', function (req, res, next) {
