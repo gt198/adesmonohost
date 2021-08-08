@@ -10,7 +10,7 @@ app.use(cors());
 
 app.get('/', function (req, res, next) {
     return res.json({
-        Hello: "The game isn't here, go to  instead",
+        Hello: "The game isn't here, go to https://gt198.github.io/adesmonohost/ instead",
     });
 });
 
