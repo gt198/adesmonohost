@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="./game.js"></script>
+    <link href="./game.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="session-info">
+        <p>Session Id: <br> <span id="session-id"></span></p>
+    </div>
+    
+    <div id="game">
+        <div id="number" class="text-center">???</div>
+        <input id="guess-number" class="center">
+        <p class="text-center">Last Guess:<br> <span id="last-guess"></span></p>
+        <button id="check-guess">Check</button>
+    </div>
+</body>
+
+</html>
